@@ -201,14 +201,28 @@
 								<h5 class="font-alt m-t-0">Generative Design by Reinforcement Learning
 </h5>
 								<p>
-								Generative design is the technology that generates a large number of structurally optimal designs in parallel by 
-diversifying the problem definition of topology optimization. Recently, AI-based design automation technology that 
-combines generative design and deep learning is gaining much attention. When generating a large number of designs, one 
-of important evaluation factors is diversity. In general, the problem definition is diversified through varying of force and 
-boundary conditions, and the diversity of generated designs is influenced by such the parameter levels. This study 
-proposes a reinforcement learning (RL) based generative design process to determine optimal parameter level values 
-according to a given initial design. Actor Critic and Proximal Policy Optimization (PPO) are applied for the learning 
-framework and the result shows that RL can increase the diversity of generated designs.
+								Generative design refers to computational design methods that can
+automatically conduct design exploration under constraints defined by
+designers. Among many approaches, topology optimization-based generative
+designs aim to explore diverse topology designs, which cannot be represented by
+conventional parametric design approaches. Recently, data-driven topology
+optimization research has started to exploit artificial intelligence, such as
+deep learning or machine learning, to improve the capability of design
+exploration. This study proposes a reinforcement learning (RL) based generative
+design process, with reward functions maximizing the diversity of topology
+designs. We formulate generative design as a sequential problem of finding
+optimal design parameter combinations in accordance with a given reference
+design. Proximal Policy Optimization is used as the learning framework, which
+is demonstrated in the case study of an automotive wheel design problem. To
+reduce the heavy computational burden of the wheel topology optimization
+process required by our RL formulation, we approximate the optimization process
+with neural networks. With efficient data preprocessing/augmentation and neural
+architecture, the neural networks achieve a generalized performance and
+symmetricity-reserving characteristics. We show that RL-based generative design
+produces a large number of diverse designs within a short inference time by
+exploiting GPU in a fully automated manner. It is different from the previous
+approach using CPU which takes much more processing time and involving human
+intervention.
 								</p>
 							</div>
 							
